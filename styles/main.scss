@@ -1,0 +1,103 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+$primary: rgb(135, 20, 0);
+$background: rgb(248, 239, 219);
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+    height: 100vh;
+    width: 99vw;
+}
+
+//  Nav
+
+.nav-container {
+    position: fixed;
+    box-shadow:0 0 10px rgba(37, 37, 37, 0.139);
+    width: 100%;
+    display: block;
+    z-index: 99;
+    background-color: $background;
+}
+
+.nav-container {
+    h1 {
+        font-family : sans-serif;
+        color: $primary;
+        margin-left: 20px;
+    }
+}
+
+.first-menu {
+    display: flex;
+}
+
+.search {
+    height: 1em;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+
+}
+
+.search::placeholder{
+    font-family: sans-serif;
+}
+
+.search[type="text"]{
+    color: rgb(37, 37, 37);
+    font-family: sans-serif;
+}
+
+nav {
+    display: none;
+}
+
+.first-menu {
+    a {
+        display: none;
+    }
+}
+
+.burger {
+    position: absolute;
+    left: 85%;
+    bottom: 40%;
+    background-color: $primary;
+    zoom: 170%;
+    padding-top: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.burger {
+    img {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    }
+}
+
+.kvadratas {
+    height: 1.3em;
+    width: 1.3em;
+    background-color: $primary;
+    position: relative;
+    bottom: 6px;
+    left: 10px;
+}
+
+.kvadratas::after {
+    content: url("../img/search.svg");
+    padding-top: 2px;
+    padding-left: 2px;
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+
+}
