@@ -101,3 +101,186 @@ nav {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 
 }
+
+//  Content
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-style {
+    color: $primary;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    p {
+        background-color: $primary;
+        color: $background;
+        box-shadow: 10px 10px 0 #f5730a;
+        width: 60%;
+        padding: 50px;
+        margin-left: 20px;
+    }
+}
+
+.hero {
+    h3 {
+        position: relative;
+        right: 15%;
+    }
+}
+
+//  Testimonials
+
+.testimonials {
+    position: relative;
+    top: 200px;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+}
+
+.qt1::after {
+    content: 'John Doe';
+    position: relative;
+    left: 80%;
+    font-size: 13px;
+}
+
+.qt2::after {
+    content: 'Jane Doe';
+    position: relative;
+    left: 80%;
+    font-size: 13px;
+}
+
+.qt3::after {
+    content: 'John Smith';
+    position: relative;
+    left: 80%;
+    font-size: 13px;
+}
+
+.qt1, .qt2, .qt3 {
+    color: $background;
+    font-family: sans-serif;
+    margin: 30px;
+    padding: 15px;
+    background-color: $primary;
+    box-shadow: 10px 10px 0 #f5730a;
+}
+
+.qt1:hover, .qt2:hover, .qt3:hover {
+    transform: scale(1.05);
+    transition: transform 500ms ease;
+}
+
+.quoteImage {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    left: 70%;
+    top: 45px;
+    border: 5px solid $primary;
+}
+
+
+// .qt1::before {
+//     content: '';
+//     background-color: #f5730a;
+//     height: 52%;
+//     width: 27%;
+//     position: absolute;
+//     z-index: -1;
+// }
+
+// .qt2::before {
+//     content: '';
+//     background-color: #f5730a;
+//     height: 52%;
+//     width: 28%;
+//     position: absolute;
+//     z-index: -1;
+// }
+
+
+// .qt3::before {
+//     content: '';
+//     background-color: #f5730a;
+//     height: 52%;
+//     width: 32%;
+//     position: absolute;
+//     z-index: -1;
+// }
+
+.qt3 {
+    display: none;
+}
+
+.desktop-divider {
+   display: none;
+}
+
+//  Footer
+
+footer{
+    background-color: $primary;
+    height: 100px;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer {
+    p {
+        margin: 0;
+        font-family: sans-serif;
+        color: $background;
+        font-size: 13px;
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.footer {
+    a {
+        font-family: sans-serif;
+        text-decoration: none;
+        color: $background;
+        padding: 5px 50px;;
+        font-size: 13px;
+
+    }
+}
+
+.graphic {
+    width: 50px;
+    height: 300px;
+    background-color: $primary;
+    transform: rotateZ(47deg);
+    position: relative;
+    left: 50%;
+    box-shadow: 20px 10px 0 #f5730a;
+}
+
+.hero {
+    img {
+        display: none;
+    }
+}

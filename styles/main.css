@@ -103,4 +103,169 @@ nav {
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text-style {
+  color: #871400;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero p {
+  background-color: #871400;
+  color: #f8efdb;
+  -webkit-box-shadow: 10px 10px 0 #f5730a;
+          box-shadow: 10px 10px 0 #f5730a;
+  width: 60%;
+  padding: 50px;
+  margin-left: 20px;
+}
+
+.hero h3 {
+  position: relative;
+  right: 15%;
+}
+
+.testimonials {
+  position: relative;
+  top: 200px;
+}
+
+.quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.qt1::after {
+  content: 'John Doe';
+  position: relative;
+  left: 80%;
+  font-size: 13px;
+}
+
+.qt2::after {
+  content: 'Jane Doe';
+  position: relative;
+  left: 80%;
+  font-size: 13px;
+}
+
+.qt3::after {
+  content: 'John Smith';
+  position: relative;
+  left: 80%;
+  font-size: 13px;
+}
+
+.qt1, .qt2, .qt3 {
+  color: #f8efdb;
+  font-family: sans-serif;
+  margin: 30px;
+  padding: 15px;
+  background-color: #871400;
+  -webkit-box-shadow: 10px 10px 0 #f5730a;
+          box-shadow: 10px 10px 0 #f5730a;
+}
+
+.qt1:hover, .qt2:hover, .qt3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.quoteImage {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: relative;
+  left: 70%;
+  top: 45px;
+  border: 5px solid #871400;
+}
+
+.qt3 {
+  display: none;
+}
+
+.desktop-divider {
+  display: none;
+}
+
+footer {
+  background-color: #871400;
+  height: 100px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.footer p {
+  margin: 0;
+  font-family: sans-serif;
+  color: #f8efdb;
+  font-size: 13px;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #f8efdb;
+  padding: 5px 50px;
+  font-size: 13px;
+}
+
+.graphic {
+  width: 50px;
+  height: 300px;
+  background-color: #871400;
+  -webkit-transform: rotateZ(47deg);
+          transform: rotateZ(47deg);
+  position: relative;
+  left: 50%;
+  -webkit-box-shadow: 20px 10px 0 #f5730a;
+          box-shadow: 20px 10px 0 #f5730a;
+}
+
+.hero img {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
