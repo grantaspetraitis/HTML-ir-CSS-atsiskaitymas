@@ -141,6 +141,7 @@ nav {
   width: 60%;
   padding: 50px;
   margin-left: 20px;
+  line-height: 40px;
 }
 
 .hero h3 {
@@ -166,21 +167,24 @@ nav {
 .qt1::after {
   content: 'John Doe';
   position: relative;
-  left: 80%;
+  left: 60%;
+  bottom: 50px;
   font-size: 13px;
 }
 
 .qt2::after {
   content: 'Jane Doe';
   position: relative;
-  left: 80%;
+  left: 60%;
+  bottom: 50px;
   font-size: 13px;
 }
 
 .qt3::after {
   content: 'John Smith';
   position: relative;
-  left: 80%;
+  left: 60%;
+  bottom: 50px;
   font-size: 13px;
 }
 
@@ -267,5 +271,114 @@ footer {
 
 .hero img {
   display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+  }
+  .burger {
+    display: none;
+  }
+  nav a {
+    text-decoration: none;
+    color: #871400;
+    font-family: sans-serif;
+    position: relative;
+    margin-left: 30px;
+  }
+  .first-menu a {
+    text-decoration: none;
+    display: block;
+    color: #871400;
+    font-family: sans-serif;
+    position: absolute;
+    left: 80%;
+    top: 70%;
+  }
+  .first-menu a::after {
+    content: url("../img/caret-down-fill.svg");
+    -webkit-filter: invert(10%) sepia(95%) saturate(3343%) hue-rotate(8deg) brightness(96%) contrast(104%);
+            filter: invert(10%) sepia(95%) saturate(3343%) hue-rotate(8deg) brightness(96%) contrast(104%);
+    position: absolute;
+    top: 15%;
+    zoom: 90%;
+  }
+  .search {
+    width: 40%;
+    position: relative;
+    left: 50%;
+    z-index: 10;
+    bottom: 50px;
+  }
+  .kvadratas {
+    top: 18px;
+    position: absolute;
+    left: 90%;
+    top: 29px;
+    z-index: 11;
+  }
+  nav a:hover::after {
+    content: '';
+    background-color: #871400;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  .quotes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .qt1::after {
+    left: 30%;
+  }
+  .qt2::after {
+    left: 30%;
+  }
+  .qt3::after {
+    left: 30%;
+  }
+  .graphic {
+    position: relative;
+    left: 75%;
+    bottom: 70px;
+  }
+  .testimonials {
+    top: 1px;
+  }
+  .hero img {
+    display: unset;
+    -webkit-filter: invert(10%) sepia(95%) saturate(3343%) hue-rotate(8deg) brightness(96%) contrast(104%);
+            filter: invert(10%) sepia(95%) saturate(3343%) hue-rotate(8deg) brightness(96%) contrast(104%);
+    width: 400px;
+    position: relative;
+    bottom: 200px;
+    left: 10%;
+  }
+}
+
+@media (min-width: 912px) {
+  .desktop-divider {
+    display: unset;
+  }
+  .mobile-divider {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+  .qt3 {
+    display: unset;
+  }
 }
 /*# sourceMappingURL=main.css.map */
